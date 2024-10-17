@@ -1,79 +1,73 @@
 /* Leaderboard Container */
 .leaderboard-container {
     max-width: 800px; 
-    margin: 20px auto; /* Center the container */
-    padding: 20px; /* Add padding */
-    background-color: #f7fafc; /* Soft light background for a calming effect */
-    border-radius: 12px; /* More rounded corners for a softer look */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7fafc;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Title Styling */
 .leaderboard-title {
-    text-align: center; /* Center the title */
-    font-size: 2.5rem; /* Larger font size for the title */
-    color: #1a202c; /* Darker shade for the title */
-    margin-bottom: 20px; /* Space below title */
-    font-weight: 700; /* Bold title */
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1a202c;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
-/* Table Styling */
 .leaderboard-table {
-    width: 100%; /* Full width for the table */
-    border-collapse: collapse; /* Remove gaps between cells */
+    width: 100%;
+    border-collapse: collapse;
 }
 
-/* Header Styling */
 .leaderboard-header {
-    background-color: #4a90e2; /* Soft blue for header background */
-    color: white; /* White text color */
-    padding: 12px; /* Padding for cells */
-    text-align: left; /* Left align text */
-    font-size: 1.2rem; /* Font size for headers */
-    border-radius: 8px; /* Rounded corners for the header */
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-size: 1.2rem;
+    border-radius: 8px;
 }
 
-/* Row Styling */
 .leaderboard-row {
-    border-bottom: 1px solid #e2e8f0; /* Lighter border between rows */
+    border-bottom: 1px solid #e2e8f0;
 }
 
-/* Cell Styling */
 .leaderboard-cell {
-    padding: 12px; /* Increased padding for cells */
-    font-size: 1rem; /* Font size for cells */
-    color: #4a5568; /* Dark gray color for text */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    padding: 12px;
+    font-size: 1rem;
+    color: #4a5568;
+    transition: background-color 0.3s;
 }
 
 .leaderboard-cell:hover {
-    background-color: #ebf8ff; /* Light blue background on hover */
+    background-color: #ebf8ff;
 }
 
 .leaderboard-cell:first-child {
-    font-weight: bold; /* Bold for the rank */
-    color: #4a90e2; /* Primary color for the rank */
+    font-weight: bold;
+    color: #4a90e2;
 }
 
-/* No Scores Message */
 .no-scores {
-    text-align: center; /* Center the no scores message */
-    font-size: 1.25rem; /* Larger font for message */
-    color: #718096; /* Softer gray color for message */
-    padding: 20px; /* Add padding around message */
+    text-align: center;
+    font-size: 1.25rem;
+    color: #718096;
+    padding: 20px;
 }
 
-/* Responsive Styles */
 @media (max-width: 600px) {
     .leaderboard-title {
         font-size: 2rem;
     }
 
     .leaderboard-header {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
 
     .leaderboard-cell {
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
     }
 }
+
