@@ -1,80 +1,79 @@
 .quiz-list-container {
-    max-width: 1000px; /* Limit the width for better readability */
-    margin: 20px auto; /* Center the container */
-    padding: 20px; /* Add padding */
-    background-color: #ffffff; /* White background for contrast */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .quiz-list-title {
-    text-align: center; /* Center the title */
-    font-size: 2.5rem; /* Larger font size for the title */
-    color: #333; /* Dark color for title */
-    margin-bottom: 20px; /* Space below title */
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .quiz-cards-container {
-    display: flex; /* Use flexbox for card layout */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    justify-content: space-between; /* Space out cards */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .quiz-card {
-    background-color: #f9f9f9; /* Light background for cards */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for cards */
-    margin: 10px; /* Space between cards */
-    padding: 15px; /* Padding inside cards */
-    flex: 1 1 calc(30% - 20px); /* Responsive card sizing */
-    transition: transform 0.3s; /* Smooth scaling effect */
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    flex: 1 1 calc(30% - 20px);
+    transition: transform 0.3s;
 }
 
 .quiz-card:hover {
-    transform: translateY(-5px); /* Slightly raise card on hover */
+    transform: translateY(-5px);
 }
 
 .quiz-card-title {
-    font-size: 1.5rem; /* Font size for quiz title */
-    color: #007bff; /* Primary color for titles */
-    margin-bottom: 10px; /* Space below title */
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
 }
 
 .quiz-card-description {
-    font-size: 1rem; /* Font size for description */
-    color: #555; /* Gray color for description */
-    margin-bottom: 15px; /* Space below description */
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
 }
 
 .start-quiz-button {
-    display: inline-block; /* Block display for the button */
-    padding: 10px 15px; /* Padding for the button */
-    background-color: #007bff; /* Primary button color */
-    color: white; /* White text color */
-    text-decoration: none; /* No underline */
-    border-radius: 5px; /* Rounded corners */
-    text-align: center; /* Center text */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .start-quiz-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-    transform: translateY(-2px); /* Raise button on hover */
+    background-color: #0056b3;
+    transform: translateY(-2px);
 }
 
 .no-quizzes {
-    text-align: center; /* Center the no quizzes message */
-    font-size: 1.25rem; /* Larger font for message */
-    color: #555; /* Gray color for message */
+    text-align: center;
+    font-size: 1.25rem;
+    color: #555;
 }
 
-/* Responsive styles */
 @media (max-width: 600px) {
     .quiz-card {
-        flex: 1 1 calc(100% - 20px); /* Full width on mobile */
+        flex: 1 1 calc(100% - 20px);
     }
 
     .quiz-list-title {
-        font-size: 2rem; /* Smaller title on mobile */
+        font-size: 2rem;
     }
 }
