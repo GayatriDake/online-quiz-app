@@ -15,7 +15,7 @@ const Quiz = () => {
     useEffect(() => {
         const fetchQuiz = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/quizzes/${id}`);
+                const response = await axios.get(`http://localhost:5001/quizzes/${id}`);
                 setQuiz(response.data);
             } catch (error) {
                 console.error('Error fetching quiz:', error);
@@ -35,7 +35,7 @@ const Quiz = () => {
         e.preventDefault();
         try {
             console.log('Submitting answers:', answers, 'User Name:', userName);
-            const response = await axios.post(`http://localhost:5000/quizzes/${quiz.id}/submit`, { answers, userName });
+            const response = await axios.post(`http://localhost:5001/quizzes/${quiz.id}/submit`, { answers, userName });
             setScore(response.data.score);
             setSubmitted(true);
         } catch (error) {

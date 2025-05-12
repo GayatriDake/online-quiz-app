@@ -9,7 +9,7 @@ const Leaderboard = () => {
 
     useEffect(() => {
         const fetchLeaderboard = async () => {
-            const response = await axios.get(`http://localhost:5000/leaderboard/${quizId}`); // Correct the endpoint to access leaderboard
+            const response = await axios.get(`http://localhost:5001/leaderboard/${quizId}`); // Correct the endpoint to access leaderboard
             setScores(response.data);
         };
         fetchLeaderboard();

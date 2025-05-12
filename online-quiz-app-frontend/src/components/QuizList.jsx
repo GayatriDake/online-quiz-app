@@ -9,7 +9,7 @@ const QuizList = () => {
     useEffect(() => {
         const fetchQuizzes = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/quizzes');
+                const response = await axios.get('http://localhost:5001/quizzes');
                 console.log(response.data); // Log the response
                 setQuizzes(response.data); // Adjust based on the response structure
             } catch (error) {
