@@ -17,22 +17,6 @@ const Header = ({ quizId }) => {
                 {quizId && (
                     <Link to={`/quiz/${quizId}/leaderboard`} className="header-button">Leaderboard</Link>
                 )}
-                <div className="dropdown">
-                    <button onClick={toggleDropdown} className="header-button dropdown-toggle">
-                        Quizzes
-                    </button>
-                    {isDropdownOpen && (
-                        <div className="dropdown-content">
-                            <Link to="/quiz/1" className="dropdown-item">History Quiz</Link>
-                            <Link to="/quiz/2" className="dropdown-item">Science Quiz</Link>
-                            <Link to="/quiz/3" className="dropdown-item">Math Quiz</Link>
-                        </div>
-                    )}
-                </div>
-                <div className="header-search">
-                    <input type="text" placeholder="Search quizzes..." className="search-input" />
-                </div>
-                <Link to="/profile" className="header-button">Profile</Link>
             </nav>
         </header>
     );
